@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8">
+	<link href="style.css" rel="stylesheet" type="text/css">
+	<title>Sevilla attractions</title>	
+	<script defer src="info.js"></script>
+	<script defer src="https://apps.elfsight.com/p/platform.js"></script>
+	<script src="https://kit.fontawesome.com/c70bd3712f.js" crossorigin="anonymous"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	
+</head>
+<body>
+
+	<div class="background">	
+		<iframe src="https://uploads.knightlab.com/storymapjs/1918b6ed07101ed7ce6ac5ba45bfa9e6/seville-3-day/index.html" frameborder="0" width="100%" height="800"></iframe>
+		<ul id="loadbuttons">
+			<li class="loadbutton" id="b1" data-src="https://uploads.knightlab.com/storymapjs/1918b6ed07101ed7ce6ac5ba45bfa9e6/seville-3-day/index.html">Top 15</li>
+			<li class="loadbutton" id="b2" data-src="https://uploads.knightlab.com/storymapjs/1918b6ed07101ed7ce6ac5ba45bfa9e6/3-day-trip-sevilla/index.html">3 days</li>
+			<li class="loadbutton" id="b3" data-src="https://uploads.knightlab.com/storymapjs/1918b6ed07101ed7ce6ac5ba45bfa9e6/5-day-trip-sevilla/index.html">5 days</li>
+		</ul>
+
+		<div class="container">
+			
+			<img class="maincardimage"><i class="fas fa-times"></i></img>
+			<div class="maincardheading"></div>
+			<div class="maincardtext">
+				<div class="description"></div>
+				<div class="details">
+					<div class="togglehours">
+						<div class="cardhours">
+							<i class="far fa-clock"></i>
+							<div class="text">
+								<div id="hours">Opening hours not available</div>
+								<div class="clickexpand ce1">(Click for full hours)</div>
+							</div>
+						</div>
+					</div>
+					<div class="dropdown hours_full">n/a</div>
+					<div class="toggleexchange">
+						<div class="cardhours">
+							<i class="fas fa-coins"></i>
+								<div class="text">
+									<div id=euro>n/a</div>
+									<div class="clickexpand ce2">(Click for rates)</div>
+								</div>
+						</div>
+					</div>
+					<div class="dropdown exchange_full">
+						n/a
+					</div>
+					<a class="taurl" target="_blank">
+						<div class="cardhours">
+							<i class="fab fa-tripadvisor"></i>
+							<div class="text">Tripadvisor</div>
+						</div>
+					</a>
+				</div>
+			</div>
+				<div class="maincardreviews"></div>
+			
+		</div>
+
+		<div class="row"></div>
+	
+	</div>
+
+</div>
+
+
+
+
+
+
+
+</body>
+</html>

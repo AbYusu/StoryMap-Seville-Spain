@@ -1,0 +1,288 @@
+@font-face {
+	src: url(fonts/happy-times-at-the-ikob.otf);
+	font-family: ikob;
+}
+
+@font-face {
+	src: url(fonts/humanist-777-bt.ttf);
+	font-family: humanist;
+}
+
+@font-face {
+	src: url(fonts/LemonMilk.otf);
+	font-family: lemon;
+}
+
+@font-face {
+	src: url(fonts/LemonMilklight.otf);
+	font-family: lemonlight
+}
+
+$gr: #00A680;
+$rd: #C14957;
+$def: #242424;
+
+html, body {	
+	height: 100%;
+	width: 100%;
+}
+
+
+body {
+	margin: 0;
+	padding: 0;
+	background: white;
+	color: $def;
+	font-family: humanist;
+	font-size: 18px;
+	color: $def;
+}
+
+
+#b1 {
+	color: $rd;
+}
+
+// Overview
+
+.background {
+	margin: 0 25%;
+}
+
+ul {
+	padding: 0;
+	margin: 0 auto;
+	list-style: none;
+	display: flex;
+	border-bottom: 2px solid $rd;
+	cursor: pointer;
+
+	li {
+		padding: 0.8em;
+		font-weight: 600;
+
+		&:hover {
+			background: darken($color: white, $amount: 10%);
+		}
+	}
+}
+
+.container {
+	display: none;
+	position: relative;
+	margin: 1% 0 2% 0;
+	padding: 1%;
+	border-radius: 2%;
+	background: darken($color: white, $amount: 3%);
+}
+
+.fa-times {
+	position: absolute;
+	top: 25px;
+	right: 25px;
+	padding: 0 3px;
+	border-radius: 2px;
+	cursor: pointer;
+		
+	&:hover {
+		color: lighten($color: $def, $amount: 10%);
+		background: darken($color: white, $amount: 10%);
+	}
+}
+
+.maincardimage {
+	border-radius: 10px 10px 0 0;
+	height: auto;
+	width: 100%;
+	position: relative;
+}
+
+.maincardheading {
+	margin: 1% 0 0.5% 0;
+	font-family: lemonlight;
+	font-size: 28px;
+	border-bottom: solid 2px $rd;
+
+	h2 {
+		margin: 0;
+	}
+}
+
+.maincardtext {
+	display: inline-flex;
+	margin: 0;
+}
+
+.description {
+	width: 80%;
+	padding-right: 2%;
+	border-right: 1px solid gray;
+
+	p {
+		margin: 0;
+		font-family: ikob;
+	}
+}
+
+.address {
+	margin-top: 2%;
+}
+
+.details {
+	width: 20%;
+	margin-left: 2%;
+
+	a {
+		text-decoration: none;
+		color: $def;
+
+		&:hover {
+			color: lighten($color: $def, $amount: 25%);
+			transition-duration: 0.2s;
+		}
+	}
+}
+
+.cardhours {
+	padding: 0.4em 0;
+	text-emphasis: bold;
+
+		.text {
+			padding-left: 30px;
+			font-weight: 600;
+		}
+
+		i {
+			float: left;
+			font-size: 20px;
+		}
+}
+
+.clickexpand {
+	font-size: 12px;
+	color: rgb(75, 75, 75);
+	cursor: pointer;
+}
+
+.dropdown {
+	display: none;
+	font-size: 16px;
+	padding-left: 30px;
+	margin: 0;
+}
+
+.maincardreviews {
+	margin: 2%;
+}
+
+
+// Cards
+
+.row {
+	margin: 0;
+}
+
+.cardcontainer {
+  float: left;
+  width: 50%;
+  position: relative;
+}
+
+.card {
+	margin: 2%;
+	border: 1px solid #f0f0f0;
+	border-radius: 1px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.cardnumber {
+	position: absolute;
+	z-index: 999;
+	top: 10px;
+	left: 10px;
+	font-family: lemon;
+	font-size: 28px;
+	text-align: center;
+	width: 40px;
+	height: 40px;
+	background: white;
+}
+
+.cardimage {
+	height: auto;
+	width: 100%;
+
+}
+
+.cardtext {
+	margin: 0 2%;
+	
+	h1 {
+		font-family: lemonlight;
+		font-size: 22px;
+		margin: 2% 0;
+	}
+}
+
+.cardwrapper {
+	display: flex;
+	justify-content: space-between;
+
+}
+
+.infobutton {
+	margin: 0 2% 2% 0;
+	color: white;
+	background: $rd;
+	font-size: 16px;
+	padding: 0.5em;
+	border: none;
+	border-radius: 1px;
+
+		&:hover {
+			background: darken($color: $rd, $amount: 3%);
+		}
+}
+
+
+
+@media (max-width: 1200px) {
+
+	.container {
+		margin: 0 5%;
+	}
+
+	.wrapper {
+		margin: 0;
+		text-align: center;
+		width: 100%;
+	}
+
+	.maincardtext {
+		display: block;
+	}
+
+	.description {
+		width: 100%;
+		padding: 0;
+		border-right: none;
+	}
+	.details {
+		margin: 0 15%;
+		width: 70%;
+		text-align: center;
+	}
+}
+
+@media (max-width: 900px) {
+
+	.cardcontainer {
+		width: 100%;
+	}
+
+}
